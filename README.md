@@ -8,7 +8,7 @@ By Zheng Shou, Jonathan Chan, Alireza Zareian, Kazuyuki Miyazawa, and Shih-Fu Ch
 
 ### Citing
 
-If you find S-CNN useful, please consider citing:
+If you find CDC useful, please consider citing:
 
     @inproceedings{cdc_shou_cvpr17,
       author = {Zheng Shou and Jonathan Chan and Alireza Zareian and Kazuyuki Miyazawa and Shih-Fu Chang},
