@@ -40,6 +40,13 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
       Year = {2014}
       }
       
+    @inproceedings{scnn_shou_wang_chang_cvpr16,
+      author = {Zheng Shou and Dongang Wang and Shih-Fu Chang},
+      title = {Temporal Action Localization in Untrimmed Videos via Multi-stage CNNs},
+      year = {2016},
+      booktitle = {CVPR} 
+      }
+      
 ### Installation:
 0. Download ffmpeg from https://www.ffmpeg.org/ to `./lib/preprocess/`
 1. Compile CDC:
