@@ -51,6 +51,5 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 1. Compile CDC:
     - Hint: please refer to [C3D](https://github.com/facebook/C3D) and [Caffe](https://github.com/BVLC/caffe) for more details about compilation such as making your own Makefile.config
     - `cd ./CDC/; make all`
-[comment]: # (2. Download pre-trained models to `./models/`: either from [Dropbox](https://www.dropbox.com/s/657cuo60xg41zln/models.7z?dl=0) or [Baiduyun](http://pan.baidu.com/s/1o8AHrUa) )
 
 
