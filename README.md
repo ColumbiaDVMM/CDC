@@ -56,4 +56,16 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 - Hint: please refer to [C3D-v1.0](https://github.com/facebook/C3D/tree/master/C3D-v1.0) and [Caffe](https://github.com/BVLC/caffe) for more details about compilation such as making your own Makefile.config
 - Compile CDC: `cd ./CDC/; make all`
 
+### Run demo:
+- This demo is designed to let users to have a quick try of CDC feature extraction.
+- More details of this demo:
+    * 1. 
+
+### Reproduce results on THUMOS 2014 dataset:
+
+
+### Train your own model:
+
+
+
 
