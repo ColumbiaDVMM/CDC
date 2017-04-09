@@ -70,6 +70,15 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 1. 
 2. 
 
+- CDC network prediction
+
+
+- Post-process
+
+
+- Evaluation
+
+
 ### Train your own model:
 
 
