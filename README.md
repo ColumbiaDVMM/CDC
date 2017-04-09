@@ -60,19 +60,20 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 ### Run demo:
 - This demo is designed to let users to have a quick try of CDC feature extraction.
 - More details of this demo:
-1. We provide input data in `demo/data/window' along with input data list file `demo/data/test.lst`
-2. Each input data sample is a 32-frames long window. In order to directly reuse `VIDEO_SEGMENTATION_DATA` data format developed in [C3D-v1.0](https://github.com/facebook/C3D/tree/master/C3D-v1.0), each of our input data is stored in bin format and consists of pixel values stacked over time (in the channel dim, besides RGB values, the pixel-level ground truth label is attached as the 4-th value; all pixels in the same frame have the same label; during testing, we only need provide random value for the label since it won't be used). We provide an example code for generating such bin file on THUMOS test set in the next section.
+1. we provide input data in `demo/data/window' along with input data list file `demo/data/test.lst`
+2. each input data sample is a 32-frames long window. In order to directly reuse `VIDEO_SEGMENTATION_DATA` data format developed in [C3D-v1.0](https://github.com/facebook/C3D/tree/master/C3D-v1.0), each of our input data is stored in bin format and consists of pixel values stacked over time (in the channel dim, besides RGB values, the pixel-level ground truth label is attached as the 4-th value; all pixels in the same frame have the same label; during testing, we only need provide random value for the label since it won't be used). We provide an example code for generating such bin file on THUMOS test set in the next section.
 3. run the demo: `cd demo; ./xfeat.sh;`
 4. output results will be stored in `demo/feat`
 
 ### Reproduce results on THUMOS 2014 dataset:
 - Pre-process
-1. first extract all frames in the following folder which will be used in the next step python file
-`inputdir = '/DATA_ROOT/THUMOS14/test/all_frames_pervideo/'`
+1. first extract all frames in the following folder which will be used in the next step python file: `inputdir = '/DATA_ROOT/THUMOS14/test/all_frames_pervideo/'`
 2. `cd THUMOS14/predata/test` and run `python gen_test_bin_and_list.py` to generate the bin files and the list file for the test set.
 
 - CDC network prediction
-
+1. `cd THUMOS14/test` and you will see needed files for using CDC network to do prediction (i.e. feature extraction of the last layer) and outputs will be stored in `feat`
+2. the trained model used for feature extraction is `/CDC_root/model/thumos_CDC/convdeconv-TH14_iter_24390`
+3. the last layer of our trained model has 22 nodes corresponding to 22 possible frame-level classes(from the first to the last: background, action1-20, ambiguous)
 
 - Post-process
 
