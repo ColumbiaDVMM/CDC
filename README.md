@@ -76,6 +76,10 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 3. the last layer of our trained model has 22 nodes corresponding to 22 possible frame-level classes(from the first to the last: background, action1-20, ambiguous)
 
 - Post-process
+1. cd `THUMOS14/test/postprocess` and we have three post-processing steps in matlab
+2. run `matlab step1_gen_test_metadata.m` and will generate `metadata.mat` which consists of three vectors:
+* 
+* 
 
 
 - Evaluation
