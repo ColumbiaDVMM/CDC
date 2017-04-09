@@ -67,8 +67,8 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 
 ### Reproduce results on THUMOS 2014 dataset:
 - Pre-process
-1. 
-2. 
+1. first extract all frames in the following folder which will be used in the next step python file `inputdir = '/DATA_ROOT/THUMOS14/test/all_frames_pervideo/'`
+2. `cd THUMOS14/predata/test` and run `python gen_test_bin_and_list.py` to generate the bin files and the list file for the test set.
 
 - CDC network prediction
 
