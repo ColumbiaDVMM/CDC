@@ -6,7 +6,7 @@ By Zheng Shou, Jonathan Chan, Alireza Zareian, Kazuyuki Miyazawa, and Shih-Fu Ch
 
 ### Introduction:
 
-Convolutional-De-Convolutional Networks (CDC) is a deep learning framework for per-frame labeling and precise temporal action localization in untrimmed long videos.
+CDC is a deep learning framework for per-frame labeling and precise temporal action localization in untrimmed long videos.
 
 This code has been tested on Ubuntu 14.04 with a single NVIDIA GeForce GTX TITAN X card.
 
@@ -14,6 +14,10 @@ Please use "Issues" to ask questions or report bugs. Thanks.
 
 [comment]: # ()
 Current code is our rough version and we are improving its implementation details, while the current version suffices to run demo, repeat our experimental results, and train your own models.
+
+### License
+
+To be updated
 
 ### Citing:
 
@@ -49,8 +53,7 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
       }
       
 ### Installation:
-1. Compile CDC:
-    - Hint: please refer to [C3D-v1.0](https://github.com/facebook/C3D/tree/master/C3D-v1.0) and [Caffe](https://github.com/BVLC/caffe) for more details about compilation such as making your own Makefile.config
-    - `cd ./CDC/; make all`
+- Hint: please refer to [C3D-v1.0](https://github.com/facebook/C3D/tree/master/C3D-v1.0) and [Caffe](https://github.com/BVLC/caffe) for more details about compilation such as making your own Makefile.config
+- Compile CDC: `cd ./CDC/; make all`
 
 
