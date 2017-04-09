@@ -55,11 +55,13 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 ### Installation:
 - Hint: please refer to [C3D-v1.0](https://github.com/facebook/C3D/tree/master/C3D-v1.0) and [Caffe](https://github.com/BVLC/caffe) for more details about compilation such as making your own Makefile.config
 - Compile CDC: `cd ./CDC/; make all`
+- For the sake of using our code smoothly, please first get familiar with [C3D](https://github.com/facebook/C3D).
 
 ### Run demo:
 - This demo is designed to let users to have a quick try of CDC feature extraction.
 - More details of this demo:
-1. 
+1. We provide input data in `demo/data/window' along with input data list file `demo/data/test.lst`
+2. Each input data sample is a 32-frames long window. In order to directly reuse `VIDEO_SEGMENTATION_DATA` data format developed in [C3D-v1.0](https://github.com/facebook/C3D/tree/master/C3D-v1.0), each of our input data is stored in bin format and consists of pixel values stacked over time (in the channel dim, besides RGB values, the pixel-level ground truth label is attached as the 4-th value; all pixels in the same frame have the same label; during testing, we only need provide random value for the label since it won't be used).
 
 ### Reproduce results on THUMOS 2014 dataset:
 
