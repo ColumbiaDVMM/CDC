@@ -99,9 +99,12 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 
 - Evaluation
 1. Per-frame labeling:
+    - note that `multi-label-test.mat` contains ground truth label for each frame. #frames by #classes.
+    - `cd THUMOS14/eval/PreFrameLabeling/` and run `matlab compute_framelevel_mAP.m`; map is the per-frame labeling mAP
 
 2. Temporal localization:
-
+    - `cd THUMOS14/eval/TemporalActionLocalization/` and run `matlab eval_thumos14.m`
+    - results are stored in `res_CDC_thumos14.mat`. we vary the overlap threshold IoU used in evaluation from 0.3 to 0.7
 
 ### Train your own model:
 
