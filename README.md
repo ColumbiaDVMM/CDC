@@ -78,8 +78,8 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 - Post-process
 1. cd `THUMOS14/test/postprocess` and we have three post-processing steps in matlab
 2. run `matlab step1_gen_test_metadata.m` and will generate `metadata.mat` which consists of three vectors:
-* 
-* 
+    * 
+    * 
 
 
 - Evaluation
