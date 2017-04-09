@@ -78,11 +78,17 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 - Post-process
 1. cd `THUMOS14/test/postprocess` and we have three post-processing steps in matlab
 2. run `matlab step1_gen_test_metadata.m` and will generate `metadata.mat` which consists of three vectors:
-    - g
-    - g
-
+    - frmid
+    - videoid
+    - kept_frm_index
+3. run `matlab step2_read_feat.m` and will read all caffe outputs into two matlab matrixs:
+    - read_res.mat: 
+    - probcrf.mat
 
 - Evaluation
+1. Per-frame labeling:
+
+2. Temporal localization:
 
 
 ### Train your own model:
