@@ -77,13 +77,25 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 
 - Post-process
 1. cd `THUMOS14/test/postprocess` and we have three post-processing steps in matlab
-2. run `matlab step1_gen_test_metadata.m` and will generate `metadata.mat` which consists of three vectors:
-    - frmid
-    - videoid
-    - kept_frm_index
+2. run `matlab step1_gen_test_metadata.m` and will generate `metadata.mat` which consists of three vectors (each vector corresponds to each video's all frames ordered in time for all test videos):
+    - frmid: frame id in each video, starts with 1
+    - videoid: belongs to which video
+    - kept_frm_index: when we generate bin window files, the last window may overlap with its previous window and thus have duplicate frames; this kept_frm_index can be used to index all unique frames from the frame list for bin window files.
 3. run `matlab step2_read_feat.m` and will read all caffe outputs into two matlab matrixs:
-    - read_res.mat: 
-    - probcrf.mat
+    - read_res.mat: this contains `prob`, which is the prediction results directly read from CDC outputs. #frames by #classes.
+    - proball.mat: this contains `proball`, which uses kept_frm_index to remove redundant frames in the above `prob` and removes confidence score prediction for the last class (ambiguous)
+4. run `matlab step3_gen_CDC_det.m` to produce action segment instances prediction for temporal localization.
+    - `SCNN-proposal.mat` is the proposal results of [Segment-CNN](https://github.com/zhengshou/scnn/) and we follow Segment-CNN to keep segments with confidence score > 0.7
+    - `res_seg_swin.mat` is the results of refining temporal boundaries of segment candidates from Segment-CNN. This mat file contains `seg_swin`: each row stands for one candidate segment; as for each column: 
+        * 1: video name in THUMOS14 test set
+        * 2: sliding window length measured by number of frames
+        * 3: start frame index
+        * 4: end frame index
+        * 5: start time
+        * 6: end time
+        * 9: confidence score of being the class indicated in the column 11
+        * 10: confidence score of being action/non-background
+        * 11: the predicted action class (from the 20 action classes [index 1-20] and the background [index 0])
 
 - Evaluation
 1. Per-frame labeling:
