@@ -12,7 +12,8 @@ This code has been tested on Ubuntu 14.04 with a single NVIDIA GeForce GTX TITAN
 
 Please use "Issues" to ask questions or report bugs. Thanks.
 
-[comment]: # (Current code is our rough version and we are improving its implementation details, while the current version suffices to run demo, repeat our experimental results, and train your own models.)
+[comment]: # ()
+Current code is our rough version and we are improving its implementation details, while the current version suffices to run demo, repeat our experimental results, and train your own models.
 
 ### Citing:
 
