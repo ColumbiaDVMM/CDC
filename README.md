@@ -107,7 +107,9 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
     - results are stored in `res_CDC_thumos14.mat`. we vary the overlap threshold IoU used in evaluation from 0.3 to 0.7
 
 ### Train your own model:
+- Prepare pre-trained model as init: as explained in the paper, we use weights in sports1m model (`model/sports1m_C3D/conv3d_deepnetA_sport1m_iter_1900000`) to init our CDC network. We prepare this following script for generating the init model of CDC: `cd THUMOS14/training/init/; ./run_net_surgey_sports1m_convdeconv.sh` and it generates `conv3d_deepnetA_sport1m_iter_1900000.convdeconv` to be used as init during fine-tuning your own model.
 
+- Training example: example files for setting up caffe to run CDC fine-tuning are in `THUMOS14/training/`. Please refer to the above code for THUMOS test set window bin files generation to prepare your own training data. And please refer to [C3D](https://github.com/facebook/C3D) and [Caffe](https://github.com/BVLC/caffe) for more general instructions about how to train 3D CNN model.
 
 
 
