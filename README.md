@@ -1,6 +1,6 @@
 To be updated
 
-# CDC
+# CDC: Convolutional-De-Convolutional Networks for Precise Temporal Action Localization in Untrimmed Videos
 
 By Zheng Shou, Jonathan Chan, Alireza Zareian, Kazuyuki Miyazawa, and Shih-Fu Chang.
 
