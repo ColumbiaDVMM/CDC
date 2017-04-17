@@ -17,7 +17,7 @@ Current code is our rough version and we are improving its implementation detail
 
 ### License
 
-S-CNN is released under the MIT License (refer to the LICENSE file for details).
+CDC is released under the MIT License (refer to the LICENSE file for details).
 
 ### Citing:
 
