@@ -1,5 +1,7 @@
 Please find the whole code repo and models at [CDC-bitbucket](https://bitbucket.org/columbiadvmm/cdc)
 
+Project website: 128.59.65.112:1000
+
 # CDC: Convolutional-De-Convolutional Networks for Precise Temporal Action Localization in Untrimmed Videos
 
 By Zheng Shou, Jonathan Chan, Alireza Zareian, Kazuyuki Miyazawa, and Shih-Fu Chang.
