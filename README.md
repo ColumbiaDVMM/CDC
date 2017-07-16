@@ -1,6 +1,6 @@
 Please find the whole code repo and models at [CDC-bitbucket](https://bitbucket.org/columbiadvmm/cdc)
 
-Project website: 128.59.65.112:1000
+Project website: [http://www.ee.columbia.edu/ln/dvmm/researchProjects/cdc/](http://www.ee.columbia.edu/ln/dvmm/researchProjects/cdc/)
 
 # CDC: Convolutional-De-Convolutional Networks for Precise Temporal Action Localization in Untrimmed Videos
 
