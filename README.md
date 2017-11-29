@@ -57,6 +57,7 @@ A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and L. Fei-Fei, La
 ### Installation:
 - Hint: please refer to [C3D-v1.0](https://github.com/facebook/C3D/tree/master/C3D-v1.0) and [Caffe](https://github.com/BVLC/caffe) for more details about compilation such as making your own Makefile.config
 - Compile CDC: `cd ./CDC/; make all`
+- Note that do not need to make unit test cases
 - For the sake of using our code smoothly, please first get familiar with [C3D](https://github.com/facebook/C3D).
 
 ### Run demo:
